@@ -1,17 +1,18 @@
-// out: ../../css/components/left-menu.css, compress: true
+// out: ../../css/components/aside.css, compress: true
 @import 'variables.less';
-// Name:            left-menu
-// Description:     Defines styles to create layouts with left-menu
+// Name:            aside
+// Description:     Defines styles to create layouts with aside
 //
-// Component:       '.left-menu__*'
-//                  '.left-menu__*'
+// Component:       '.aside__*'
+//                  '.aside__*'
 //
 // -------------------------------------------------
-// Block '.left-menu'
+// Block '.aside'
 // -------------------------------------------------
-.left-menu{
+.aside{
     display: inline-block;
-    width: @left-menu-width;
+    width: @aside-width;
+    padding: 30px 0;
     background: #171717;
     color: #fff;
     min-height: 100%;
@@ -28,5 +29,19 @@
     // All elements
     // -------------------------------------------------
 
+    // Element '.aside .aside__list'
+    & &__list{
 
+    }
+
+    // Element '.aside .aside__item'
+    & &__item{
+        
+    }
+
+    // Element '.aside .aside__link'
+    & &__link{
+        padding: 0 10px;
+        line-height: 20px;
+    }
 }

@@ -1,1 +1,8 @@
-.main{display:inline-block;vertical-align:top;width:calc(100% - 200px)}
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+.main {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 200px);
+}
