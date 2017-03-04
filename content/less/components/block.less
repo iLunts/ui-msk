@@ -45,14 +45,27 @@
     // All elements
     // -----------------------------------------
 
-    // Element '.block .block__item'
-    & &__item{
+    // Element '.block .block__prefix'
+    & &__prefix{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        color: #fff;
+        font-size: 12rem;
+        text-shadow: 0 20px 30px rgba(0, 0, 0, 0.07);
+        z-index: 0;
+        text-align: center;
+        margin: 0;
+        line-height: 1;
 
-        &.block__item{
-            // Modificator '.block .block__item.block__item--green'
-            &--green{
-                background: @color-green;
-            }
-        }
+        // Element '.block .block__prefix + .block__content'
+        & + .block__content{
+            margin-top: 100px;
+        }    
     }
+
+    // Element '.block .block__content'
+    & &__content{
+        padding: 0 20px;
+    }    
 }
