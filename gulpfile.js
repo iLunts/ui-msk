@@ -1,11 +1,13 @@
 var gulp = require('gulp');
+var less = require('gulp-less');
+var path = require('path');
 var cleanCSS = require('gulp-clean-css');
 // var sourcemaps = require('gulp-sourcemaps');
 var concatCss = require('gulp-concat-css');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 
-gulp.task('default', ['scripts', 'minify-css'], function() {});
+gulp.task('default', ['scripts', 'less', 'minify-css'], function() {});
 
 gulp.task('scripts', function() {
   return gulp.src(['scripts/*.js', 'view/**/*.js'])
@@ -20,6 +22,14 @@ gulp.task('minify-css', function() {
         .pipe(cleanCSS({compatibility: 'ie8'}))
         // .pipe(sourcemaps.write())
         .pipe(gulp.dest('web-src/css/'));
+});
+
+gulp.task('less', function () {
+  return gulp.src('content/less/**/*.less')
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
+    .pipe(gulp.dest('content/css'));
 });
 
 // Watch

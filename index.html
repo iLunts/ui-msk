@@ -7,28 +7,19 @@
     <link rel="shortcut icon" href="content/img/favicon.ico" type="image/x-icon">
     <title>Invest</title>
 
-    <!-- Components -->
-    <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.carousel.css">
-    <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.theme.default.css">
-    <!-- end Components -->
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="/web-src/css/style.min.css">
 
 </head>
 <body>
 
     <!-- Left-menu -->
-    <div data-ng-include="'view/ui/menu/left-menu.html'"></div>
+    <aside class="left-menu" data-ng-include="'view/ui/menu/left-menu.html'"></aside>
 
     <!-- Content -->
-    <main class="main">
-        <main data-ng-view></main>
-    </main>
+    <main class="main" data-ng-view></main>
 
     <!-- Scripts -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/owl.carousel/src/js/owl.carousel.js"></script>
-
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-route/angular-route.js"></script>
 

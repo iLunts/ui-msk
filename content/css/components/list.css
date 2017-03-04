@@ -1,1 +1,51 @@
-.list{position:relative}.list.list--h .list__item{display:inline-block;vertical-align:top}.list.list--h .list__item+.list__item{margin-left:15px}.list.list--direction .list__item:nth-child(n+7) .content{margin:0;padding:0 15px;border:none}.list.list--direction .list__item .content{position:relative;min-height:120px;margin-bottom:25px;padding:0 15px 25px;border-bottom:1px solid #d1d1d1}.list.list--direction .list__item .content:before{content:'';position:absolute;top:8px;left:0;width:4px;height:4px;border-radius:100%;background:#00a651}.list.list--direction .list__item .title{font-size:14px;line-height:18px;font-weight:700;margin:0}.list.list--direction .list__item .text{font-size:20px;line-height:25px;font-weight:100;margin:0}.list .list__item{position:relative}.list .list__title{margin:6px 0;font-weight:500}
+.list {
+  position: relative;
+}
+.list.list--h .list__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.list.list--h .list__item + .list__item {
+  margin-left: 15px;
+}
+.list.list--direction .list__item:nth-child(n+7) .content {
+  margin: 0;
+  padding: 0 15px;
+  border: none;
+}
+.list.list--direction .list__item .content {
+  position: relative;
+  min-height: 120px;
+  margin-bottom: 25px;
+  padding: 0 15px 25px;
+  border-bottom: 1px solid #d1d1d1;
+}
+.list.list--direction .list__item .content:before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background: #00a651;
+}
+.list.list--direction .list__item .title {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+.list.list--direction .list__item .text {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 100;
+  margin: 0;
+}
+.list .list__item {
+  position: relative;
+}
+.list .list__title {
+  margin: 6px 0;
+  font-weight: 500;
+}
