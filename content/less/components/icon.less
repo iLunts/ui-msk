@@ -1,0 +1,50 @@
+// out: ../../css/components/icon.css, compress: true
+@import 'variables.less';
+// Name:            icon
+// Description:     Defines styles to create layouts with icon
+//
+//
+// Component:       `.icon__*`
+// ----------------------------------------------------
+// Block '.icon'
+// ----------------------------------------------------
+.icon {
+    display: inline-block;
+
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+    &&--mini{
+        width: @icon-height-mini;
+        height: @icon-height-mini;
+        font-size: @icon-font-size-mini;
+    }
+
+    &&--sm{
+        width: @icon-height-sm;
+        height: @icon-height-sm;
+        font-size: @icon-font-size-sm;
+    }
+
+    &&--md{
+        width: @icon-height-md;
+        height: @icon-height-md;
+        font-size: @icon-font-size-md;
+    }
+
+    &&--lg{
+        width: @icon-height-lg;
+        height: @icon-height-lg;
+        font-size: @icon-font-size-lg;
+    }
+
+    &&--middle{
+        display: inline-block;
+        vertical-align: middle !important;
+    }
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+}

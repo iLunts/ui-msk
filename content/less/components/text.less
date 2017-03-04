@@ -1,0 +1,96 @@
+// out: ../../css/components/text.css, compress: true
+@import 'variables.less';
+// **************** Variables ****************
+@text-color-muted:          #999;
+
+// **** Color variables
+@text-color-green:          #49ae65;
+@text-color-red:            #EE3442;
+@text-color-blue:            #0091ca;
+
+// ******************* Base ******************
+.t {
+
+    // Modificator '.t--muted'
+    &--muted {
+        color: @text-color-muted;
+    }
+
+    // Modificator '.t--r'
+    &--r {
+        text-align: right;
+    }
+
+    // Modificator '.t--l'
+    &--l {
+        text-align: left;
+    }
+
+    // Modificator '.t--c'
+    &--c {
+        text-align: center !important;
+    }
+
+    // Modificator '.t--light'
+    &--light{
+        font-weight: 200 !important;
+    }
+
+    // Modificator '.t--sm'
+    &--sm {
+        font-size: 75%;
+        // line-height: 1rem;
+    }
+
+    // Modificator '.t--md'
+    &--md {
+        font-size: 85%;
+        // line-height: 1rem;
+    }
+
+    // Modificator '.t--bold'
+    &--bold {
+        font-weight: 500;
+    }
+
+    // Modificator '.t--truncate'
+    &--truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    // -----------------------------------------------------
+    // Modifiers:       `text--h*`
+    // -----------------------------------------------------
+    &--h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        color: #171717;
+    }
+    &--h2 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+        color: #171717;
+    }
+    &--h3 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: #171717;
+    }
+    &--h4 {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: #171717;
+    }
+    &--h5 {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        color: #171717;
+    }
+    &--h6 {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        color: #171717;
+    }
+}

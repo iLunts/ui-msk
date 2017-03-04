@@ -1,0 +1,1 @@
+.panel,.panel:hover{text-decoration:none}.panel:before,.panel:after{content:"";display:table}.panel:after{clear:both}.panel{display:block;position:relative}.panel.panel--shadow{padding:20px;background:#fff;color:#4f5260;box-shadow:2px 15px 50px rgba(41,44,61,0.1)}

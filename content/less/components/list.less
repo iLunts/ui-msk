@@ -1,0 +1,84 @@
+// out: ../../css/components/list.css, compress: true
+@import 'variables.less'; // Name:            List
+// Description:     Defines styles to create layouts with list
+//
+// Component:       `list__*`
+//
+// ----------------------------------------------------
+// Block '.list'
+// ----------------------------------------------------
+
+.list {
+    position: relative;
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+    // Modificator '.list.list--h'
+    &&--h {
+        // Element '.list.list--h .list__item'
+        & .list__item {
+            display: inline-block;
+            vertical-align: top;
+            // Element '.list.list--h .list__item + .list__item'
+            & + .list__item {
+                margin-left: 15px;
+            }
+        }
+    }
+    // Modificator '.list.list--direction'
+    &&--direction {
+        // Element '.list.list--direction .lsit__item'
+        & .list__item {
+            &:nth-child(n+7) .content {
+                margin: 0;
+                padding: 0 15px;
+                border: none;
+            }
+
+            & .content {
+                position: relative;
+                min-height: 120px;
+                margin-bottom: 25px;
+                padding: 0 15px 25px;
+                border-bottom: 1px solid #d1d1d1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 100%;
+                    background: @color-green;
+                }
+            }
+            // Element '.list.list--direction .lsit__item .title'
+            & .title {
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 700;
+                margin: 0;
+            }
+            // Element '.list.list--direction .lsit__item .title'
+            & .text {
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 100;
+                margin: 0;
+            }
+        }
+    }
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+    // Element '.list .list__item'
+    & &__item {
+        position: relative;
+    }
+    // Element '.list .list__title'
+    & &__title {
+        margin: 6px 0;
+        font-weight: 500;
+    }
+}

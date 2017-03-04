@@ -1,0 +1,326 @@
+// out: ../../css/components/button.css, compress: true
+@import 'variables.less';
+// Name:            Button
+// Description:     Defines styles for buttons
+//
+// Component:       `button`
+//
+// Sub-objects:     `button-group`
+//                  `button__dropdown`
+//
+// Modifiers:       `button--success`
+//                  `button--link`
+//                  `button--mini`
+//                  `button--sm`
+//                  `button--lg`
+//
+// States:          `active`
+//
+// ----------------------------------------------------------
+// Block '.button'
+// ----------------------------------------------------------
+.button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.button {
+    -webkit-appearance: none;
+    margin: 0;
+    border: none;
+    overflow: visible;
+    font: inherit;
+    color: @button-color;
+    text-transform: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 @button-padding-horizontal;
+    background: @button-background;
+    vertical-align: middle;
+    line-height: @button-line-height;
+    min-height: @button-height;
+    font-size: @button-font-size;
+    text-decoration: none;
+    text-align: center;
+
+    // ---------------------------------------------------------
+    // All modificators
+    // ---------------------------------------------------------
+
+    // Modificator '.button.button--mini'
+    &&--mini {
+        min-height: @button-mini-height;
+        padding: 0 @button-mini-padding-horizontal;
+        line-height: @button-mini-line-height;
+        font-size: @button-mini-font-size;
+    }
+
+    // Modificator '.button.button--sm'
+    &&--sm {
+        min-height: @button-small-height;
+        padding: 0 @button-small-padding-horizontal;
+        line-height: @button-small-line-height;
+        font-size: @button-small-font-size;
+    }
+
+    // Modificator '.button.button--lg'
+    &&--lg {
+        min-height: @button-height-large;
+        padding: 0 @button-padding-horizontal-large;
+        line-height: @button-line-height-large;
+        font-size: @button-font-size-large;
+    }
+
+    // Modificator '.button.button--success'
+    &&--success {
+        background-color: @button-success-background !important;
+        color: @button-success-color !important;
+
+        // Action '.button.button--success:focus'
+        // Action '.button.button--success:hover'
+        &:focus,
+        &:hover {
+            background-color: @button-success-hover-background !important;
+            color: @button-success-hover-color !important;
+        }
+
+        // State '.button.button--success.active'
+        // State '.button.button--success:active'
+        &.active,
+        &:active {
+            background-color: @button-success-active-background !important;
+            color: @button-success-active-color !important;
+        }
+    }
+
+    // Modificator '.button.button--success-dark'
+    &&--success-dark{
+        background-color: @button-background-success-dark !important;
+        color: @button-color-success-dark !important;
+        // border-color: @button-background-success-dark !important;
+
+        // Action '.button.button--success-dark:focus'
+        // Action '.button.button--success-dark:hover'
+        &:focus,
+        &:hover {
+            background-color: @button-background-success-dark-hover !important;
+            color: @button-color-success-dark-hover !important;
+        }
+
+        // State '.button.button--success-dark.active'
+        // State '.button.button--success-dark:active'
+        &.active,
+        &:active {
+            background-color: @button-background-success-dark-active !important;
+            color: @button-color-success-dark-active !important;
+        }
+    }
+
+    // Modificator '.button.button--app'
+    &&--app{
+        padding: 0;
+    }
+
+    // Modificator '.button.button--rounded'
+    &&--rounded{
+        border-radius: 100px;
+    }
+
+    // Modificator '.button.button--link'
+    &&--link{
+        // color: @button-link-color;
+        // border: 1px solid transparent;
+        background: transparent;
+
+        // State '.button.button--link.active'
+        // State '.button.button--link:active'
+        // State '.button.button--link:disabled'
+        // Action '.button.button--link:focus'
+        // Action '.button.button--link:hover'
+        &.active,
+        &:active,
+        &:disabled,
+        &:focus,
+        &:hover {
+            // border-color: transparent;
+            background: none;
+        }
+
+        // State '.button.button--link.active'
+        // State '.button.button--link:active'
+        // Action '.button.button--link:focus'
+        // Action '.button.button--link:hover'
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            color: @button-link-hover-color;
+            text-decoration: @button-link-hover-text-decoration;
+        }
+
+        // State '.button.button--link:disabled'
+        &:disabled {
+            color: @button-link-disabled-color;
+        }
+
+        // Action '.button.button--link:focus'
+        &:focus {
+            outline: 1px dotted;
+        }
+    }
+
+    // ---------------------------------------------------------
+    // All elements
+    // ---------------------------------------------------------
+
+    // Elements '.button + .button'
+    & + .button{
+        margin-left: 5px;
+    }
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background-color: @button-disabled-background;
+        color: @button-disabled-color;
+    }
+
+    &:focus,
+    &:hover {
+        color: @button-hover-color;
+        outline: none;
+        text-decoration: none;
+    }
+
+    // Elements '.button.active'
+    // Elements '.button:active'
+    &.active,
+    &:active {
+        background-color: @button-active-background;
+        color: @button-active-color;
+    }
+}
+
+// --------------------------------------------------------
+// BLock '.button-group'
+// --------------------------------------------------------
+.button-group {
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-size: 0.001px;
+    white-space: nowrap;
+
+    // ---------------------------------------------------------
+    // All modificator
+    // ---------------------------------------------------------
+
+
+    // ---------------------------------------------------------
+    // All elements
+    // ---------------------------------------------------------
+
+    // Element '.button-group > *'
+    & > * {
+        display: inline-block;
+    }
+
+    // Element '.button-group > .button'
+    & .button{
+        vertical-align: top;
+        padding: 0 (@button-padding-horizontal * 1.5);
+    }
+
+    // Element '.button-group > .button:first-child'
+    // Element '.button-group > .button:first-child .button'
+    & > .button:first-child,
+    & > div:first-child .button {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    // Element '.button-group > .button:last-child'
+    // Element '.button-group > .button:last-child .button'
+    & > .button:last-child,
+    & > div:last-child .button {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    // Element '.button-group > .button:nth-child(n+2)'
+    // Element '.button-group > .button:nth-child(n+2) .button'
+    & > .button:nth-child(n+2),
+    & > div:nth-child(n+2) .button {
+        margin-left: -1px;
+    }
+}
+
+// --------------------------------------------------------
+// BLock '.link'
+// --------------------------------------------------------
+.link {
+    outline: none;
+    text-decoration: underline;
+    color: inherit;
+
+    // Action '.link:hover'
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    // Element '.link + .link'
+    & + .link {
+        margin-left: @link-margin;
+    }
+
+    // Element '.link__icon'
+    &__icon{
+        display: inline-block;
+        margin-right: 2px;
+        font-size: 15px;
+
+        // Element '.link__icon'
+        & + .link{
+            margin-left: 4px;
+        }
+    }
+
+
+    // ---------------------------------------------------------
+    // All modificators
+    // ---------------------------------------------------------
+
+    // Modificator '.link.link--reset'
+    &&--reset{
+        border-color: transparent;
+    }
+
+    // Modificator '.link.link--line'
+    &&--line{
+        border-bottom: 1px solid;
+        text-decoration: none;
+    }
+}
+
+// --------------------------------------------------------
+// BLock 'a'
+// --------------------------------------------------------
+
+a{
+    color: #000;
+
+    &:hover{
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:active,
+    &:hover{
+        outline: none;
+    }
+}

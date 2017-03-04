@@ -1,0 +1,95 @@
+// out: ../css/main.css, compress: true
+@import 'components/variables.less';
+// -------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,latin-ext');
+
+html{
+    font-family: @font-site;
+}
+
+img{
+    max-width: 100%;
+    border: 0;
+    height: auto;
+    vertical-align: middle;
+    display: block;
+}
+
+// Element '.page-wrap'
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: (@main-sticky-footer-height * -1);
+
+    &:after {
+        content: "";
+        display: block;
+    }
+}
+
+// Block '.footer'
+.footer,
+.page-wrap:after {
+    height: @main-sticky-footer-height;
+}
+
+
+// Block '.main'
+.main {
+    padding: @main-padding 0;
+}
+
+// ------------------------------------------------
+// Block '.download'
+// ------------------------------------------------
+.download {
+    font-size: 16px;
+    color: #0d0d0d;
+    margin: 48px 0 10px;
+    font-weight: 200;
+}
+
+// ----------------------------------------------------
+// Block '.bottom-adress'
+// ----------------------------------------------------
+.bottom-adress{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 13px;
+    max-width: 400px;
+    color: #2e2e2e;
+
+    & p{
+        margin-top: 6px;
+        font-weight: 200;
+        font-size: 15px;
+    }
+}
+
+.bottom-menu{
+
+    & h3{
+        font-size: 22px;
+        color: #2e2e2e;
+        margin: 18px 0 13px;
+        font-weight: 200;
+    }
+
+    & ul li{
+        margin-top: 5px;
+
+        & a{
+            font-size: 14px;
+            line-height: 18px;
+            color: #2e2e2e;
+            font-weight: 200;
+        }
+    }
+
+    &-wrapper{
+        padding-top: 33px;
+        color: #2e2e2e;
+        border-bottom: 1px solid #dddddd;
+        padding-bottom: 40px;
+    }
+}

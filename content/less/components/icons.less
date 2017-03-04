@@ -1,0 +1,94 @@
+// out: ../../css/components/icons.css, compress: true
+@icomoon-font-path: "../../fonts";
+
+// ------------------------------------------------------
+
+@icon-cog: "\e810";
+@icon-printer: "\e81c";
+@icon-map-marker: "\e833";
+@icon-download: "\e865";
+@icon-magnifier: "\e86f";
+@icon-chevron-left: "\e875";
+@icon-chevron-right: "\e876";
+@icon-chevron-down-circle: "\e888";
+@icon-chevron-left-circle: "\e889";
+@icon-document: "\e900";
+
+// ------------------------------------------------------
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('@{icomoon-font-path}/Linearicons-Free.eot?iqduby');
+  src:  url('@{icomoon-font-path}/Linearicons-Free.eot?iqduby#iefix') format('embedded-opentype'),
+    url('@{icomoon-font-path}/Linearicons-Free.ttf?iqduby') format('truetype'),
+    url('@{icomoon-font-path}/Linearicons-Free.woff?iqduby') format('woff'),
+    url('@{icomoon-font-path}/Linearicons-Free.svg?iqduby#Linearicons-Free') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cog {
+  &:before {
+    content: @icon-cog;
+  }
+}
+.icon-printer {
+  &:before {
+    content: @icon-printer;
+  }
+}
+.icon-map-marker {
+  &:before {
+    content: @icon-map-marker;
+  }
+}
+.icon-download {
+  &:before {
+    content: @icon-download;
+  }
+}
+.icon-magnifier {
+  &:before {
+    content: @icon-magnifier;
+  }
+}
+.icon-chevron-left {
+  &:before {
+    content: @icon-chevron-left;
+  }
+}
+.icon-chevron-right {
+  &:before {
+    content: @icon-chevron-right;
+  }
+}
+.icon-chevron-down-circle {
+  &:before {
+    content: @icon-chevron-down-circle;
+  }
+}
+.icon-chevron-left-circle {
+  &:before {
+    content: @icon-chevron-left-circle;
+  }
+}
+.icon-document {
+  &:before {
+    content: @icon-document;
+  }
+}

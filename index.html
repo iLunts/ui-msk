@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="site">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="content/img/favicon.ico" type="image/x-icon">
+    <title>Invest</title>
+
+    <!-- Components -->
+    <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.carousel.css">
+    <link rel="stylesheet" href="bower_components/owl.carousel/src/css/owl.theme.default.css">
+    <!-- end Components -->
+
+    <link rel="stylesheet" href="/web-src/css/style.min.css">
+
+</head>
+<body>
+
+    <!-- Left-menu -->
+    <div data-ng-include="'view/ui/menu/left-menu.html'"></div>
+
+    <!-- Content -->
+    <main class="main">
+        <main data-ng-view></main>
+    </main>
+
+    <!-- Scripts -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/owl.carousel/src/js/owl.carousel.js"></script>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+
+    <script src="web-src/js/app.min.js"></script>
+
+    <!-- Google maps -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-google-maps/2.0.11/angular-google-maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</body>
+
+</html>

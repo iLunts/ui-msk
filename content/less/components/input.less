@@ -1,0 +1,115 @@
+// out: ../../css/components/input.css, compress: true
+@import 'variables.less';
+// Name:            Input
+// Description:     Defines styles for input
+//
+// Component:       `input`
+//
+// Modifiers:       `input--tags*`
+//                  `input--search`
+//                  `input--select`
+//                  `input--*`
+//
+// -----------------------------------------------------------------
+.input {
+    position: relative;
+    padding: @input-padding 0;
+    color: @input-text-color;
+    background: @input-background;
+    border: none;
+    border-bottom: 1px solid @input-border-color;
+    margin-bottom: @input-margin;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 200ms;
+
+    &:focus{
+        // border-bottom-color: @input-border-color-focus;
+    }
+
+    // -----------------------------------------------------------
+    // All modificators
+    // -----------------------------------------------------------
+
+    // Modificator 'search'
+    &--search {
+        position: relative;
+        padding: @input-padding-search 0;
+        border-bottom: 1px solid @input-border-color-search;
+        color: #1d1d1d;
+    }
+
+    // -----------------------------------------------------------
+    // All elements
+    // -----------------------------------------------------------
+}
+
+// -----------------------------------------------------------------
+// Block '.label'
+// -----------------------------------------------------------------
+.label{
+    display: block;
+    width: 100%;
+    margin: @label-margin 0 0 0;
+    font-size: @label-font-size;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #9b9b9b;
+
+    // -----------------------------------------------------------
+    // All modificators
+    // -----------------------------------------------------------
+
+    // -----------------------------------------------------------
+    // All elements
+    // -----------------------------------------------------------
+}
+
+// -----------------------------------------------------------------
+// Block '.input-group'
+// -----------------------------------------------------------------
+
+.input-group{
+    position: relative;
+
+    // -----------------------------------------------------------
+    // All modificators
+    // -----------------------------------------------------------
+
+
+    // -----------------------------------------------------------
+    // All elements
+    // -----------------------------------------------------------
+
+    // Element '.input-group .input'
+    & .input{
+        margin: 0;
+    }
+
+    // Element '.input-group .input-group__icon'
+    &__icon{
+        position: absolute;
+        left: 3px;
+        top: 50%;
+        color: @color-green;
+        z-index: 1;
+
+        // Element '.input-group .input-group__icon.icon--sm'
+        &.icon--sm{
+            margin-top: -(@icon-height-sm / 2);
+
+            // Element '.input-group .input-group__icon.icon--sm + .input-group__input'
+            & + .input-group__input{
+                padding-right: @icon-height-sm + 2;
+            }
+        }
+
+        // Element '.input-group .input__icon--right'
+        &--right{
+            left: auto;
+            right: 3px;
+        }
+    }
+}
