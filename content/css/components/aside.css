@@ -10,6 +10,14 @@
   margin-right: -4px;
 }
 .aside .aside__link {
+  display: block;
   padding: 0 10px;
-  line-height: 20px;
+  line-height: 1.625rem;
+  transition: 250ms;
+}
+.aside .aside__link:hover {
+  background: #464646;
+}
+.aside .aside__parent .aside__link {
+  padding: 0 20px;
 }

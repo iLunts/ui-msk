@@ -41,7 +41,23 @@
 
     // Element '.aside .aside__link'
     & &__link{
+        display: block;
         padding: 0 10px;
-        line-height: 20px;
+        line-height: 1.625rem;
+        transition: 250ms;
+
+        // Element '.aside .aside__link:hover'
+        &:hover{
+            background: #464646;
+        }
     }
+
+    // Element '.aside .aside__parent'
+    & &__parent{
+
+        // Element '.aside .aside__parent .aside__link'
+        & .aside__link{
+            padding: 0 20px;
+        }
+    }    
 }
