@@ -4,5 +4,5 @@ html {
 .main {
   display: inline-block;
   vertical-align: top;
-  width: calc(100% - 200px);
+  margin-left: 200px;
 }
