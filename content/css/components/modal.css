@@ -18,10 +18,21 @@
 .modal .modal__dialog {
   position: absolute;
   left: 25%;
+  top: 10%;
   background: #fff;
   padding: 20px;
   width: 50%;
   margin-right: -25%;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.3);
   z-index: 10;
+}
+.modal .modal__dialog.modal__dialog--gray {
+  background: #f4f4f4;
+}
+.modal .modal__tab {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  background: #fff;
+  margin: -20px 0 -20px -20px;
 }
