@@ -13,15 +13,14 @@
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
 
     width: @aside-width;
     padding: 20px 0 0 0;
     background: #171717;
     color: #fff;
-    min-height: 100%;
-    min-height: 100vh;
-    vertical-align: top;
-    margin-right: -4px;
+    // min-height: 100%;
+    // min-height: 100vh;
 
     // -------------------------------------------------
     // All modificators
@@ -57,6 +56,13 @@
 
     // Element '.aside .aside__parent'
     & &__parent{
+        display: none;
+        transition: all 250ms;
+
+        // State '.aside .aside__parent.open'
+        &.open{
+            display: block;
+        }    
 
         // Element '.aside .aside__parent .aside__link'
         & .aside__link{

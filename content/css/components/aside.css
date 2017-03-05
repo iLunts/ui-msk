@@ -2,14 +2,11 @@
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 200px;
   padding: 20px 0 0 0;
   background: #171717;
   color: #fff;
-  min-height: 100%;
-  min-height: 100vh;
-  vertical-align: top;
-  margin-right: -4px;
 }
 .aside .aside__link {
   display: block;
@@ -19,6 +16,13 @@
 }
 .aside .aside__link:hover {
   background: #464646;
+}
+.aside .aside__parent {
+  display: none;
+  transition: all 250ms;
+}
+.aside .aside__parent.open {
+  display: block;
 }
 .aside .aside__parent .aside__link {
   padding: 0 20px;

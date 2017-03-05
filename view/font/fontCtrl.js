@@ -8,8 +8,6 @@ app.config(["$routeProvider", function ($routeProvider) {
             templateUrl: "view/font/index.html",
             controller: "fontCtrl"
         });
-
-        $routeProvider.otherwise({ redirectTo: "/" });
     }
 ]);
 

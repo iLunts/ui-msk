@@ -2,7 +2,5 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 .main {
-  display: inline-block;
-  vertical-align: top;
   margin-left: 200px;
 }
