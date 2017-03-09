@@ -23,7 +23,6 @@
     // All modificators
     // -----------------------------------------
 
-
     // -----------------------------------------
     // All elements
     // -----------------------------------------
@@ -52,7 +51,19 @@
 
         // Modificator '.modal .modal__dialog.modal__dialog--gray'
         &.modal__dialog--gray{
-            background: #f4f4f4;
+            background: @modal-background-gray;
+        }
+
+        // Modificator '.modal .modal__dialog.modal__dialog--lg'
+        &.modal__dialog--lg{
+            left: (100% - @modal-width-lg) / 2;
+            width: @modal-width-lg;
+        }
+
+        // Modificator '.modal .modal__dialog.modal__dialog--md'
+        &.modal__dialog--md{
+            left: (100% - @modal-width-md) / 2;
+            width: @modal-width-md;
         }
     }    
 
@@ -61,12 +72,58 @@
         
     }
 
-    // Element '.modal .modal__content'
+    // Element '.modal .modal__tab'
     & &__tab{
-        position: relative;
-        display: inline-block;
-        width: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
         background: #fff;
-        margin: -@modal-padding 0 -@modal-padding -@modal-padding;
+        width: @modal-tab-width;
+        padding: (@modal-padding / 2) 0;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        
+        // Element '.modal .modal__tab + .modal__content'
+        & + .modal__content{
+            margin-left: @modal-tab-width;
+            min-height: 250px;
+        }
+
+        // Element '.modal .modal__tab-link'
+        &-link{
+            position: relative;
+            display: block;
+            line-height: 1.5rem;
+            padding: (@modal-padding / 4) @modal-padding;
+            font-weight: 500;
+
+            // State '.modal .modal__tab-link.active'
+            &.active{
+                font-weight: 700;
+                background-color: @modal-background-gray;
+                
+                // Element '.modal .modal__tab-link.active:after'
+                &:after{
+                    content: '';
+                    position: absolute;
+                    right: -@modal-padding;
+                    top: 0;
+                    bottom: 0;
+                    width: @modal-padding;
+                    background-color: @modal-background-gray;
+                }
+
+                // Element '.modal .modal__tab-link.active:after'
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    bottom: 5px;
+                    width: 3px;
+                    background-color: #03a9f4;
+                }                
+            }
+        }
     }    
 }
