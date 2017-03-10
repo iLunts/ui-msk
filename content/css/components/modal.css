@@ -37,6 +37,9 @@
   left: 12.5%;
   width: 75%;
 }
+.modal .modal__header {
+  border-bottom: 1px solid #ddd;
+}
 .modal .modal__tab {
   position: absolute;
   top: 0;
@@ -47,7 +50,10 @@
   padding: 10px 0;
   box-shadow: inset -10px 0 20px 0 rgba(0, 0, 0, 0.1);
 }
-.modal .modal__tab + .modal__content {
+.modal .modal__tab ~ .modal__header {
+  margin-left: 150px;
+}
+.modal .modal__tab ~ .modal__content {
   margin-left: 150px;
   min-height: 250px;
 }

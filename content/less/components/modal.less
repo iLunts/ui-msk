@@ -72,6 +72,11 @@
         
     }
 
+    // Element '.modal .modal__header'
+    & &__header{
+        border-bottom: 1px solid #ddd;
+    }    
+
     // Element '.modal .modal__tab'
     & &__tab{
         position: absolute;
@@ -83,8 +88,13 @@
         padding: (@modal-padding / 2) 0;
         box-shadow: inset -10px 0 20px 0 rgba(0,0,0,.1);
         
-        // Element '.modal .modal__tab + .modal__content'
-        & + .modal__content{
+        // Element '.modal .modal__tab ~ .modal__header'
+        & ~ .modal__header{
+            margin-left: @modal-tab-width;            
+        }
+
+        // Element '.modal .modal__tab ~ .modal__content'
+        & ~ .modal__content{
             margin-left: @modal-tab-width;
             min-height: 250px;
         }
