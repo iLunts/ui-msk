@@ -1,0 +1,66 @@
+// out: ../../css/components/pipeline.css, compress: true
+@import 'variables.less';
+// Name:            pipeline
+// Description:     Defines styles to create layouts with pipeline
+//
+// ----------------------------------------------------
+// Block '.pipeline'
+// ----------------------------------------------------
+.pipeline {
+    position: relative;
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.pipeline .pipeline__panel'
+    & &__panel{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: @pipeline-background;
+        height: @pipeline-height;
+        margin-left: @aside-width;
+    }
+
+    // Element '.pipeline .pipeline__list'
+    & &__list{
+        text-align: center;
+        border-top: 1px solid #ddd;
+    }    
+
+    // Element '.pipeline .pipeline__item'
+    & &__item{
+        position: relative;
+        min-width: 140px;
+        margin-top: -1px;
+        text-align: center;
+        line-height: @pipeline-height;
+        font-weight: 500; 
+        text-shadow: 1px 0 0 #fff;
+        border-top: 1px dotted transparent;
+
+        // Element '.pipeline .pipeline__item + .pipeline__item'
+        // & + .pipeline__item{
+        //     border-left: 1px dashed #ddd;
+        //     margin-left: 0 !important;
+        // }
+    }    
+
+    // Element '.pipeline .pipeline__badge'
+    & &__badge{
+        position: absolute;
+        top: -4px;
+        left: 20px;
+        right: 20px;
+        height: 7px;
+        background: #ddd;
+        border-radius: 20px;
+    }   
+}

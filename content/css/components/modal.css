@@ -33,6 +33,10 @@
   left: 2.5%;
   width: 95%;
 }
+.modal .modal__dialog.modal__dialog--md {
+  left: 12.5%;
+  width: 75%;
+}
 .modal .modal__tab {
   position: absolute;
   top: 0;
