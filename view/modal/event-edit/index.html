@@ -5,26 +5,29 @@
     <div class="modal__dialog modal__dialog--lg tab">
         
         <!--Modal tab vertical-->
-        <uib-tabset active="activePill" vertical="true" type="pills">
-            <uib-tab index="0" heading="Информация">
-                <div data-ng-include="'view/modal/event-edit/part/_information.html'"></div>
-            </uib-tab>
-            <uib-tab index="1" heading="Клиент">
-                <div data-ng-include="'view/modal/event-edit/part/_client.html'"></div>                
-            </uib-tab>
-            <uib-tab index="2" heading="Активность">
-                <div data-ng-include="'view/modal/event-edit/part/_activity.html'"></div>                
-            </uib-tab>
-            <uib-tab index="3" heading="Скидки">
-                <div data-ng-include="'view/modal/event-edit/part/_sale.html'"></div>                
-            </uib-tab>
-            <uib-tab index="4" heading="Карта">
-                <div data-ng-include="'view/modal/event-edit/part/_card.html'"></div>                
-            </uib-tab>
-            <uib-tab index="5" heading="Чеки">
-                <div data-ng-include="'view/modal/event-edit/part/_check.html'"></div>                
-            </uib-tab>
-        </uib-tabset>
+        <div class="modal__tab modal__tab--v">
+            <uib-tabset active="activePill" vertical="true" type="pills">
+                <uib-tab index="0" heading="Информация">
+                    <div data-ng-include="'view/modal/event-edit/part/_information.html'"></div>
+                </uib-tab>
+                <uib-tab index="1" heading="Клиент">
+                    <div data-ng-include="'view/modal/event-edit/part/_client.html'"></div>                
+                </uib-tab>
+                <uib-tab index="2" heading="Активность">
+                    <div data-ng-include="'view/modal/event-edit/part/_activity.html'"></div>                
+                </uib-tab>
+                <uib-tab index="3" heading="Скидки">
+                    <div data-ng-include="'view/modal/event-edit/part/_sale.html'"></div>                
+                </uib-tab>
+                <uib-tab index="4" heading="Карта">
+                    <div data-ng-include="'view/modal/event-edit/part/_card.html'"></div>                
+                </uib-tab>
+                <uib-tab index="5" heading="Чеки">
+                    <div data-ng-include="'view/modal/event-edit/part/_check.html'"></div>                
+                </uib-tab>
+            </uib-tabset>
+        </div>
+        
 
         <!--<ul class="modal__tab modal__tab--v tab__list">
             <li class="modal__tab-item tab__item">
@@ -54,29 +57,6 @@
                 </div>
             </div>
         </div>-->
-
-        <div class="modal__content">
-
-            <div class="grid grid--sm grid--divider t--c">
-                 <div class="col--1-2">
-                    <p class="t--h3 m--reset">22 ноября 2017г.</p>
-                </div>
-                <div class="col--1-2">
-                    <p class="t--h3 m--reset">19:00 — 22:00</p>
-                </div>
-            </div>
-
-            <div class="grid grid--sm">
-                <div class="col--1-10 t--c">
-                    <div class="avatar avatar--md avatar--empty"></div>
-                </div>
-
-                <div class="col--9-10">
-                    <p>Фамилия</p>
-                </div>
-            </div>
-
-        </div>
 
     </div>
 
