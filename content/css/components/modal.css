@@ -20,7 +20,6 @@
   left: 25%;
   top: 10%;
   background: #fff;
-  padding: 20px;
   width: 50%;
   margin-right: -25%;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.3);
@@ -40,40 +39,29 @@
 .modal .modal__header {
   border-bottom: 1px solid #ddd;
 }
-.modal .modal__tab {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background: #f4f4f4;
+.modal .modal__tab.modal__tab--v .nav {
+  display: inline-block;
   width: 150px;
-  padding: 10px 0;
+  background: #f4f4f4;
   box-shadow: inset -10px 0 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  margin-right: -4px;
+  vertical-align: top;
 }
-.modal .modal__tab ~ .modal__header {
-  margin-left: 150px;
+.modal .modal__tab.modal__tab--v .nav-item {
+  color: #949494;
 }
-.modal .modal__tab ~ .modal__content {
-  margin-left: 150px;
-  min-height: 250px;
-}
-.modal .modal__tab-link {
-  position: relative;
-  display: block;
-  line-height: 1.5rem;
-  padding: 5px 20px;
-  font-weight: 500;
-}
-.modal .modal__tab-link.active {
-  font-weight: 700;
+.modal .modal__tab.modal__tab--v .nav-item.active {
   background-color: #fff;
+  font-weight: 700;
+  color: #171717;
+  box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-.modal .modal__tab-link.active:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 5px;
-  bottom: 5px;
-  width: 3px;
-  background-color: #03a9f4;
+.modal .modal__tab.modal__tab--v .tab-content {
+  display: inline-block;
+  width: calc(100% - 150px);
+  padding: 20px;
+  vertical-align: top;
+  background-color: #fff;
+  z-index: 1;
 }
