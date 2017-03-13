@@ -79,60 +79,6 @@
 
     // Element '.modal .modal__tab'
     & &__tab{
-<<<<<<< HEAD
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        background: @modal-tab-background;
-        width: @modal-tab-width;
-        padding: (@modal-padding / 2) 0;
-        box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.2);
-        
-        // Element '.modal .modal__tab + .modal__content'
-        & + .modal__content{
-            margin-left: @modal-tab-width;
-            min-height: 250px;
-        }
-
-        // Element '.modal .modal__tab-link'
-        &-link{
-            position: relative;
-            display: block;
-            line-height: 1.5rem;
-            padding: (@modal-padding / 4) @modal-padding;
-            font-weight: 500;
-            color: #909090;
-
-            // State '.modal .modal__tab-link.active'
-            &.active{
-                font-weight: 700;
-                background-color: #fff;
-                box-shadow: -10px 0 20px 0 rgba(0, 0, 0, 0.2);
-                color: #171717;
-                
-                // Element '.modal .modal__tab-link.active:after'
-                // &:after{
-                //     content: '';
-                //     position: absolute;
-                //     right: -@modal-padding;
-                //     top: 0;
-                //     bottom: 0;
-                //     width: @modal-padding;
-                //     background-color: @modal-background-gray;
-                // }
-
-                // Element '.modal .modal__tab-link.active:after'
-                &:before{
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    top: 5px;
-                    bottom: 5px;
-                    width: 3px;
-                    background-color: #03a9f4;
-                }                
-=======
 
         // Modificator '.modal .modal__tab.modal__tab--v'
         &.modal__tab--v{
@@ -159,7 +105,6 @@
                         box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
                     }                
                 }            
->>>>>>> 4cf396a5c0359bc7830ba3227e970bd9a6c11a42
             }
 
             // Element '.modal .modal__tab.modal__tab--v .tab-content'

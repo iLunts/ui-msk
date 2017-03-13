@@ -1,1 +1,67 @@
-.modal{opacity:0;visibility:hidden;transition:all 250ms}.modal.open{opacity:1;visibility:visible}.modal .modal__overlay{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5)}.modal .modal__dialog{position:absolute;left:25%;top:10%;background:#fff;width:50%;margin-right:-25%;box-shadow:0 0 60px 0 rgba(0,0,0,0.3);z-index:10}.modal .modal__dialog.modal__dialog--gray{background:#f4f4f4}.modal .modal__dialog.modal__dialog--lg{left:2.5%;width:95%}.modal .modal__dialog.modal__dialog--md{left:12.5%;width:75%}.modal .modal__header{border-bottom:1px solid #ddd}.modal .modal__tab.modal__tab--v .nav{display:inline-block;width:150px;background:#f4f4f4;box-shadow:inset -10px 0 20px 0 rgba(0,0,0,0.1);padding:10px 0;margin-right:-4px;vertical-align:top}.modal .modal__tab.modal__tab--v .nav-item{color:#949494}.modal .modal__tab.modal__tab--v .nav-item.active{background-color:#fff;font-weight:700;color:#171717;box-shadow:-10px 0 10px 0 rgba(0,0,0,0.2)}.modal .modal__tab.modal__tab--v .tab-content{display:inline-block;width:calc(100% - 150px);padding:20px;vertical-align:top;background-color:#fff;z-index:1}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 250ms;
+}
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+.modal .modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .modal__dialog {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  background: #fff;
+  width: 50%;
+  margin-right: -25%;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal .modal__dialog.modal__dialog--gray {
+  background: #f4f4f4;
+}
+.modal .modal__dialog.modal__dialog--lg {
+  left: 2.5%;
+  width: 95%;
+}
+.modal .modal__dialog.modal__dialog--md {
+  left: 12.5%;
+  width: 75%;
+}
+.modal .modal__header {
+  border-bottom: 1px solid #ddd;
+}
+.modal .modal__tab.modal__tab--v .nav {
+  display: inline-block;
+  width: 150px;
+  background: #f4f4f4;
+  box-shadow: inset -10px 0 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  margin-right: -4px;
+  vertical-align: top;
+}
+.modal .modal__tab.modal__tab--v .nav-item {
+  color: #949494;
+}
+.modal .modal__tab.modal__tab--v .nav-item.active {
+  background-color: #fff;
+  font-weight: 700;
+  color: #171717;
+  box-shadow: -10px 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.modal .modal__tab.modal__tab--v .tab-content {
+  display: inline-block;
+  width: calc(100% - 150px);
+  padding: 20px;
+  vertical-align: top;
+  background-color: #fff;
+  z-index: 1;
+}
