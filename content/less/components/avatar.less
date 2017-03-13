@@ -1,0 +1,150 @@
+// out: ../../css/components/avatar.css, compress: true
+@import 'variables.less';
+// Name:            avatar
+// Description:     Defines styles to create layouts with avatar
+//
+// ----------------------------------------------------
+// Block '.avatar'
+// ----------------------------------------------------
+.avatar {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    height: @avatar-height;
+    width: @avatar-height;
+    border-radius: @avatar-height;
+    border: none;
+    outline: none;
+    border-radius: @avatar-height;
+    vertical-align: middle;
+
+    &.avatar--empty{
+        border: 3px solid @avatar-border-color-solid;
+
+        &:after{
+            line-height: @avatar-height;
+            color: #fff;
+        }
+    }
+
+    // -----------------------------------------------------
+    // All modificators
+    // -----------------------------------------------------
+
+    // Modifivator '.avatar.avatar--xlg'
+    &&--xlg{
+        width: @avatar-height-xlarge;
+        height: @avatar-height-xlarge;
+        border-radius: @avatar-height-xlarge;
+
+        // Modifivator '.avatar.avatar--large.avatar--empty'
+        &.avatar--empty{
+            border: 10px solid @avatar-border-color-solid;
+
+            // Element '.avatar.avatar--large.avatar--empty:after'
+            &:after{
+                font-size: 6rem;
+                line-height: @avatar-height-xlarge;
+                top: -10%;
+            }
+        }
+    }
+
+    // Modifivator '.avatar.avatar--lg'
+    &&--lg{
+        width: @avatar-height-large;
+        height: @avatar-height-large;
+        border-radius: @avatar-height-large;
+
+        // Modifivator '.avatar.avatar--large.avatar--empty'
+        &.avatar--empty{
+            border: 10px solid @avatar-border-color-solid;
+
+            // Element '.avatar.avatar--lg.avatar--empty:after'
+            &:after{
+                font-size: 6rem;
+                line-height: @avatar-height-large;
+                top: -10%;
+            }
+        }
+    }
+
+    // Modifivator '.avatar.avatar--md'
+    &&--md{
+        width: @avatar-height-medium;
+        height: @avatar-height-medium;
+        border-radius: @avatar-height-medium;
+
+        // Modifivator '.avatar.avatar--md.avatar--empty'
+        &.avatar--empty{
+            border: 3px solid @avatar-border-color-solid;
+
+            &:after{
+                line-height: @avatar-height-medium;
+                font-size: @avatar-font-size-medium;
+            }
+        }
+    }
+
+    // Modifivator '.avatar.avatar--small'
+    &&--sm{
+        width: @avatar-height-small;
+        height: @avatar-height-small;
+        line-height: @avatar-height-small;
+        border-radius: @avatar-height-small;
+
+        // Modifivator '.avatar.avatar--sm.avatar--empty'
+        &.avatar--empty{
+            border: 3px solid @avatar-border-color-solid;
+        }
+    }
+
+    // Modifivator '.avatar.avatar--empty'
+    &&--empty{
+        background: @avatar-background-empty;
+        border: 3px solid #ddd;
+        font-family: 'icomoon';
+        font-size: @avatar-font-size;
+
+        &:after{
+            content: "\e99c";
+            position: relative;
+            top: -3px;
+            color: #ddd;
+        }
+    }
+
+    // Modificator 'avatar avatar--squared'
+    &&--squared{
+        border-radius: 4px;
+    }
+
+    // Modificator 'avatar--dashed'
+    &--dashed{
+        background: #fff;
+        border: 2px dashed @avatar-border-color-dashed;
+        color: @avatar-border-color-dashed;
+    }
+
+    // Modificator `avatar--border-solid`
+    &--border-solid{
+        border: 10px solid @avatar-border-color-solid;
+    }
+
+    // Element 'avatar__desc'
+    &__desc{
+        min-width: 180px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        padding: 10px 20px;
+        background: #FFC716;
+        border-radius: 100px;
+        transform: translateX(-50%);
+
+        & .text--muted {
+            color: #B19002 !important;
+        }
+    }
+ 
+}

@@ -1,1 +1,35 @@
-.pipeline{position:relative}.pipeline .pipeline__panel{position:fixed;left:0;right:0;bottom:0;background:#f4f4f4;height:50px;margin-left:200px}.pipeline .pipeline__list{text-align:center;border-top:1px solid #ddd}.pipeline .pipeline__item{position:relative;min-width:140px;margin-top:-1px;text-align:center;line-height:50px;font-weight:500;text-shadow:1px 0 0 #fff;border-top:1px dotted transparent}.pipeline .pipeline__badge{position:absolute;top:-4px;left:20px;right:20px;height:7px;background:#ddd;border-radius:20px}
+.pipeline {
+  position: relative;
+}
+.pipeline .pipeline__panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f4f4f4;
+  height: 50px;
+  margin-left: 200px;
+}
+.pipeline .pipeline__list {
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+.pipeline .pipeline__item {
+  position: relative;
+  min-width: 140px;
+  margin-top: -1px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+  text-shadow: 1px 0 0 #fff;
+  border-top: 1px dotted transparent;
+}
+.pipeline .pipeline__badge {
+  position: absolute;
+  top: -4px;
+  left: 20px;
+  right: 20px;
+  height: 7px;
+  background: #ddd;
+  border-radius: 20px;
+}

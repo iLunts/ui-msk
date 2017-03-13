@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('site', ['ngRoute', 'uiGmapgoogle-maps']);
+var app = angular.module('site', ['ngRoute', 'ui.bootstrap']);
 
 app.config(['$locationProvider', '$routeProvider', function($locationProvider, routeProvider) {
     // $locationProvider.html5Mode({
