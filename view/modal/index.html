@@ -3,21 +3,27 @@
     <div class="block__content">
         <div class="container">
             <div class="grid">
-                <div class="col--1-1">
-                    
-                    <h1>Modal window specification and variation</h1>
-                    <p class="t--muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>
 
+                <div class="col--1-1">
+                    <h1>Modal window specification and variation</h1>
+                    <p class="t--muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s...</p>
                 </div>
 
                 <div class="col--1-1">
-                    <p class="m--t-lg">
-                        <a href="" class="button button--success" data-ng-click="isOpenEventEdit = !isOpenEventEdit">Open event edit</a>
-                    </p>
+                    <section class="switcher">
+                        <uib-tabset active="activePill" vertical="true" type="pills">
+                            <uib-tab index="0" heading="Пример">
+                                <div data-ng-include="'view/modal/event-edit/_preview.html'"></div>
+                                <div data-ng-include="'view/modal/event-edit/index.html'"></div>
+                            </uib-tab>
+                            <uib-tab index="1" heading="Код">
+                                <div data-ng-include="'view/modal/event-edit/_code.html'"></div>
+                            </uib-tab>
+                        </uib-tabset>
+                    </section>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div data-ng-include="'view/modal/event-edit/index.html'"></div>
