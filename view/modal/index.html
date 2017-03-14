@@ -5,8 +5,9 @@
             <div class="grid">
                 <div class="col--1-1">
                     <h1>Modal window specification and variation</h1>
-                    <p class="t--muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                        standard dummy text ever since the 1500s...</p>
+                    <p class="t--muted">
+                        Модальное окно позволяет отображаться поверх существующей страницы, что концентрирует внимание клиента да конкретном действии.
+                    </p>
                 </div>
             </div>
 
@@ -19,7 +20,9 @@
                                 <div data-ng-include="'view/modal/event-edit/index.html'"></div>
                             </uib-tab>
                             <uib-tab index="1" heading="Код">
-                                <div data-ng-include="'view/modal/event-edit/_code.html'"></div>
+                                <div class="block block--sm block--gray">
+                                    <div hljs hljs-language="html" hljs-include="'view/modal/event-edit/_code.html'"></div>
+                                </div>
                             </uib-tab>
                         </uib-tabset>
                     </section>

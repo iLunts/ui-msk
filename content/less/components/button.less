@@ -75,30 +75,48 @@
 
     // Modificator '.button.button--success'
     &&--success {
-        background-color: @button-success-background !important;
-        color: @button-success-color !important;
+        background-color: @button-success-background;
+        color: @button-success-color ;
 
         // Action '.button.button--success:focus'
         // Action '.button.button--success:hover'
         &:focus,
         &:hover {
-            background-color: @button-success-hover-background !important;
-            color: @button-success-hover-color !important;
+            background-color: @button-success-hover-background;
+            color: @button-success-hover-color;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
         }
 
         // State '.button.button--success.active'
         // State '.button.button--success:active'
         &.active,
         &:active {
-            background-color: @button-success-active-background !important;
-            color: @button-success-active-color !important;
+            background-color: @button-success-active-background;
+            color: @button-success-active-color;
         }
     }
 
     // Modificator '.button.button--primary'
     &&--primary{
-        background-color: @button-background-primary;
-        color: @button-color-primary;
+        background-color: @button-primary-background;
+        color: @button-primary-color;
+
+        // Action '.button.button--primary:focus'
+        // Action '.button.button--primary:hover'
+        &:focus,
+        &:hover {
+            background-color: @button-primary-hover-background;
+            color: @button-primary-hover-color;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+        }
+
+        // State '.button.button--primary.active'
+        // State '.button.button--primary:active'
+        &.active,
+        &:active {
+            background-color: @button-primary-active-background;
+            color: @button-primary-active-color;
+        }
     }
 
     // Modificator '.button.button--link'

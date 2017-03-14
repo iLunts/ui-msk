@@ -42,22 +42,34 @@
   font-size: 16px;
 }
 .button.button--success {
-  background-color: #18a24b !important;
-  color: #fff !important;
+  background-color: rgba(24, 162, 75, 0.2);
+  color: #18a24b;
 }
 .button.button--success:focus,
 .button.button--success:hover {
-  background-color: #18a24b !important;
-  color: #fff !important;
+  background-color: rgba(24, 162, 75, 0.3);
+  color: #18a24b;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 .button.button--success.active,
 .button.button--success:active {
-  background-color: rgba(24, 162, 75, 0.8) !important;
-  color: #fff !important;
+  background-color: rgba(24, 162, 75, 0.3);
+  color: #fff;
 }
 .button.button--primary {
   background-color: rgba(33, 150, 243, 0.2);
   color: #2196f3;
+}
+.button.button--primary:focus,
+.button.button--primary:hover {
+  background-color: rgba(24, 162, 75, 0.3);
+  color: #18a24b;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+.button.button--primary.active,
+.button.button--primary:active {
+  background-color: rgba(24, 162, 75, 0.3);
+  color: #fff;
 }
 .button.button--link {
   background: transparent;

@@ -1,12 +1,33 @@
-<div class="block block--gray">
-    
-    <!-- Will get the same result as above -->
-    <div hljs hljs-language="html">
-    
-        <div>
-            12313
+<div class="modal" data-ng-class="{'open' : isOpenEventEdit}">
+
+    <!--Modal overlay-->
+    <div class="modal__overlay"></div>
+
+    <!--Modal dialog-->
+    <div class="modal__dialog modal__dialog--lg tab">
+        
+        <!--Modal tab vertical-->
+        <div class="modal__tab modal__tab--v">
+
+            <!--All tabset and tabs-->
+            <uib-tabset active="active" type="pills" vertical="true">
+                <uib-tab index="0" heading="Title">
+                    
+                    [Some content]
+                
+                </uib-tab>
+                
+                ...
+
+                <uib-tab index="1" heading="Title">
+                    
+                    [Some content]
+
+                </uib-tab>
+            </uib-tabset>
+            
         </div>
-    
+        
     </div>
 
 </div>

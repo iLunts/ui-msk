@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('site', ['ngRoute', 'ui.bootstrap', 'hljs']);
+var app = angular.module('site', ['ngRoute', 'ui.bootstrap', 'hljs', 'ngclipboard']);
 
 app.config(['$locationProvider', '$routeProvider', function($locationProvider, routeProvider) {
     // $locationProvider.html5Mode({
