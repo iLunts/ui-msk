@@ -1,0 +1,15 @@
+.switcher .nav-tabs {
+  border-bottom: 1px solid #e5e5e5;
+}
+.switcher .nav-tabs .nav-item.active .nav-link {
+  border-bottom-color: #1e87f0;
+  color: #222;
+}
+.switcher .nav-tabs .nav-link {
+  border-radius: 0;
+  padding: 9px 20px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #999;
+  font-weight: 500;
+}

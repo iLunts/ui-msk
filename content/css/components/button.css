@@ -20,6 +20,8 @@
   font-size: 1rem;
   text-decoration: none;
   text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
 }
 .button.button--mini {
   min-height: 20px;
@@ -53,25 +55,9 @@
   background-color: rgba(24, 162, 75, 0.8) !important;
   color: #fff !important;
 }
-.button.button--success-dark {
-  background-color: #026f37 !important;
-  color: #fff !important;
-}
-.button.button--success-dark:focus,
-.button.button--success-dark:hover {
-  background-color: #026f37 !important;
-  color: #fff !important;
-}
-.button.button--success-dark.active,
-.button.button--success-dark:active {
-  background-color: #026f37 !important;
-  color: #fff !important;
-}
-.button.button--app {
-  padding: 0;
-}
-.button.button--rounded {
-  border-radius: 100px;
+.button.button--primary {
+  background-color: rgba(33, 150, 243, 0.3);
+  color: #2196f3;
 }
 .button.button--link {
   background: transparent;

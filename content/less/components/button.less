@@ -42,6 +42,8 @@
     font-size: @button-font-size;
     text-decoration: none;
     text-align: center;
+    border-radius: @button-border-radius;
+    font-weight: 500;
 
     // ---------------------------------------------------------
     // All modificators
@@ -93,43 +95,14 @@
         }
     }
 
-    // Modificator '.button.button--success-dark'
-    &&--success-dark{
-        background-color: @button-background-success-dark !important;
-        color: @button-color-success-dark !important;
-        // border-color: @button-background-success-dark !important;
-
-        // Action '.button.button--success-dark:focus'
-        // Action '.button.button--success-dark:hover'
-        &:focus,
-        &:hover {
-            background-color: @button-background-success-dark-hover !important;
-            color: @button-color-success-dark-hover !important;
-        }
-
-        // State '.button.button--success-dark.active'
-        // State '.button.button--success-dark:active'
-        &.active,
-        &:active {
-            background-color: @button-background-success-dark-active !important;
-            color: @button-color-success-dark-active !important;
-        }
-    }
-
-    // Modificator '.button.button--app'
-    &&--app{
-        padding: 0;
-    }
-
-    // Modificator '.button.button--rounded'
-    &&--rounded{
-        border-radius: 100px;
+    // Modificator '.button.button--primary'
+    &&--primary{
+        background-color: @button-background-primary;
+        color: @button-color-primary;
     }
 
     // Modificator '.button.button--link'
     &&--link{
-        // color: @button-link-color;
-        // border: 1px solid transparent;
         background: transparent;
 
         // State '.button.button--link.active'
@@ -142,7 +115,6 @@
         &:disabled,
         &:focus,
         &:hover {
-            // border-color: transparent;
             background: none;
         }
 
