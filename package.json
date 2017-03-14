@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "angular": "^1.6.2",
+    "angular-highlight-js": "^1.0.1",
+    "angular-highlightjs": "^0.7.1",
     "angular-route": "^1.6.2",
     "gulp": "^3.9.1",
     "jquery": "^3.1.1"
