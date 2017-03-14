@@ -9,7 +9,8 @@
 // Block '.switcher'
 // ----------------------------------------------------
 .switcher {
-    
+    position: relative;
+
     // -----------------------------------------
     // All modificators
     // -----------------------------------------
@@ -18,6 +19,14 @@
     // -----------------------------------------
     // All elements
     // -----------------------------------------
+
+    // Element '.switcher .switcher__copy'
+    & &__copy{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+    }
 
     // Element '.switcher .nav-tabs'
     & .nav-tabs{

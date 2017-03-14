@@ -22,6 +22,7 @@
   text-align: center;
   border-radius: 4px;
   font-weight: 500;
+  transition: all 250ms;
 }
 .button.button--mini {
   min-height: 20px;
@@ -62,14 +63,14 @@
 }
 .button.button--primary:focus,
 .button.button--primary:hover {
-  background-color: rgba(24, 162, 75, 0.3);
-  color: #18a24b;
+  background-color: rgba(33, 150, 243, 0.3);
+  color: #2196f3;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 .button.button--primary.active,
 .button.button--primary:active {
-  background-color: rgba(24, 162, 75, 0.3);
-  color: #fff;
+  background-color: rgba(33, 150, 243, 0.3);
+  color: #2196f3;
 }
 .button.button--link {
   background: transparent;

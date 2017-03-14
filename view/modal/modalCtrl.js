@@ -12,7 +12,7 @@ app.controller('modalCtrl', function($scope){
 
 app.config(function (hljsServiceProvider) {
   hljsServiceProvider.setOptions({
-    // replace tab with 4 spaces
-    tabReplace: '    '
+    // replace tab with 2 spaces
+    tabReplace: '  '
   });
 });
