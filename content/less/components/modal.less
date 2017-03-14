@@ -64,12 +64,12 @@
             left: (100% - @modal-width-md) / 2;
             width: @modal-width-md;
         }
-    }    
+    }  
 
     // Element '.modal .modal__content'
-    & &__content{
+    // & &__content{
         
-    }
+    // }
 
     // Element '.modal .modal__header'
     & &__header{
@@ -117,4 +117,79 @@
             }            
         }
     }    
+}
+
+
+
+// -------------------------------------------------
+// Size '.xLarge'
+// -------------------------------------------------
+@media (min-width: @breakpoint-xlarge) {
+
+    // ------------------------------------------------
+    // Block '.modal'
+    // ------------------------------------------------
+    .modal{
+
+        // Element '.modal .modal__dialog'
+        & &__dialog{
+            width: @modal-width;
+
+            // Modificator '.modal .modal__dialog.modal__dialog--lg'
+            &.modal__dialog--lg{
+                left: (100% - (@modal-width-lg / 1.5)) / 2;
+                width: (@modal-width-lg / 1.5);
+            }
+
+            // Modificator '.modal .modal__dialog.modal__dialog--md'
+            &.modal__dialog--md{
+                left: (100% - @modal-width-md) / 2;
+                width: (@modal-width-md / 1.5);
+            }
+        }
+    }
+}
+
+// -------------------------------------------------
+// Size '.Large'
+// -------------------------------------------------
+@media (min-width: @breakpoint-large) {
+
+    // ------------------------------------------------
+    // Block '.modal'
+    // ------------------------------------------------
+    .modal{
+
+        // Element '.modal .modal__dialog'
+        & &__dialog{
+            width: @modal-width;
+
+            // Modificator '.modal .modal__dialog.modal__dialog--lg'
+            &.modal__dialog--lg{
+                left: (100% - (@modal-width-lg / 1.2)) / 2;
+                width: (@modal-width-lg / 1.2);
+            }
+
+            // Modificator '.modal .modal__dialog.modal__dialog--md'
+            &.modal__dialog--md{
+                left: (100% - (@modal-width-md / 1.2)) / 2;
+                width: (@modal-width-md / 1.2);
+            }
+        }
+    }
+
+}
+
+// -------------------------------------------------
+// Size '.Medium'
+// -------------------------------------------------
+@media (min-width: @breakpoint-medium) {
+
+}
+
+// -------------------------------------------------
+// Size '.Small'
+// -------------------------------------------------
+@media (min-width: @breakpoint-small) {
+
 }

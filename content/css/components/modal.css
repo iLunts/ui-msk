@@ -65,3 +65,29 @@
   background-color: #fff;
   z-index: 1;
 }
+@media (min-width: 1600px) {
+  .modal .modal__dialog {
+    width: 50%;
+  }
+  .modal .modal__dialog.modal__dialog--lg {
+    left: 18.33333333%;
+    width: 63.33333333%;
+  }
+  .modal .modal__dialog.modal__dialog--md {
+    left: 12.5%;
+    width: 50%;
+  }
+}
+@media (min-width: 1220px) {
+  .modal .modal__dialog {
+    width: 50%;
+  }
+  .modal .modal__dialog.modal__dialog--lg {
+    left: 10.41666667%;
+    width: 79.16666667%;
+  }
+  .modal .modal__dialog.modal__dialog--md {
+    left: 18.75%;
+    width: 62.5%;
+  }
+}
