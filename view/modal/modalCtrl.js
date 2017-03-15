@@ -7,12 +7,7 @@ app.config(["$routeProvider", function ($routeProvider) {
 ]);
 
 app.controller('modalCtrl', function($scope){
-
-});
-
-app.config(function (hljsServiceProvider) {
-  hljsServiceProvider.setOptions({
-    // replace tab with 2 spaces
-    tabReplace: '  '
-  });
+  $scope.onSuccess = function(e) {
+    e.clearSelection();
+  };
 });
