@@ -1,6 +1,12 @@
 'use strict';
 
-var app = angular.module('site', ['ngRoute', 'ui.bootstrap', 'hljs', 'ngclipboard']);
+var app = angular.module('site', [
+    'ngRoute', 
+    'ui.bootstrap', 
+    'hljs', 
+    'ngclipboard',
+    'duScroll'
+]);
 
 app.config(['$locationProvider', '$routeProvider', function($locationProvider, routeProvider) {
     // $locationProvider.html5Mode({
@@ -15,3 +21,4 @@ app.config(["$routeProvider", function($routeProvider) {
         redirectTo: "/"
     });
 }]);
+

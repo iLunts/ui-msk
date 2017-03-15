@@ -58,18 +58,18 @@
   color: #fff;
 }
 .button.button--primary {
-  background-color: rgba(33, 150, 243, 0.2);
-  color: #2196f3;
+  background-color: #e7f3ff;
+  color: #188bf5;
 }
 .button.button--primary:focus,
 .button.button--primary:hover {
-  background-color: rgba(33, 150, 243, 0.3);
+  background-color: #c7e3ff;
   color: #2196f3;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 .button.button--primary.active,
 .button.button--primary:active {
-  background-color: rgba(33, 150, 243, 0.3);
+  background-color: #c7e3ff;
   color: #2196f3;
 }
 .button.button--link {
