@@ -1,48 +1,64 @@
+<div class="container">
+    <div class="grid">
+        <div class="col--4-5">
+            <div class="block">
+                <h1 class="block__prefix">Modal</h1>
+
+                <div class="block__content">
+                    <div class="container">
+                        <div class="grid">
+                            <div class="col--1-1">
+                                <div data-ng-include="'view/modal/modal-blank/include.html'"></div>
+                            </div>
+                            <div class="col--1-1">
+                                <div class="m--t-xlg" data-ng-include="'view/modal/event-edit/include.html'"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col--1-5">
+            <div class="scrollspy scrollspy--fixed" hl-sticky="" offset-top="30">
+                <ul class="scrollspy__list">
+                    <li class="scrollspy__item">
+                        <a href="#modal-event-edit-main" du-smooth-scroll du-scrollspy class="scrollspy__link">Blank</a>
+                    </li>
+                    <li class="scrollspy__item">
+                        <a href="#modal-blank-main" du-smooth-scroll du-scrollspy class="scrollspy__link">Event edit</a>
+                    </li>
+                    <li class="scrollspy__item">
+                        <a href="#step3" du-smooth-scroll du-scrollspy class="scrollspy__link">Enter PIN</a>
+                    </li>
+                    <li class="scrollspy__item">
+                        <a href="#step4" du-smooth-scroll du-scrollspy class="scrollspy__link">Step 4</a>
+                    </li>
+                    <li class="scrollspy__divider"></li>
+                    <li class="scrollspy__item">
+                        <a href="#step5" du-smooth-scroll du-scrollspy class="scrollspy__link">
+                            Редактировать
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <div class="block">
-    <h1 class="block__prefix">Modal</h1>
+    <!--<h1 class="block__prefix">Modal</h1>-->
     <div class="block__content">
         <div class="container">
             <div class="grid">
                 <div class="col--4-5">
-                    <section name="modal-event-edit-text">
-                        <div class="grid">
-                            <div class="col--1-1">
-                                <h1>Modal window specification and variation</h1>
-                                <p class="t--muted">
-                                    Модальное окно позволяет отображаться поверх существующей страницы, что концентрирует внимание клиента да конкретном действии.
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="grid">
-                            <div class="col--1-1">
-                                <div class="switcher">
-                                    <uib-tabset active="modalEventEditActive" type="tabs" vertical="false">
-                                        <uib-tab index="0" heading="Пример">
-                                            <div data-ng-include="'view/modal/event-edit/_preview.html'"></div>
-                                            <div data-ng-include="'view/modal/event-edit/index.html'"></div>
-                                        </uib-tab>
-                                        <uib-tab index="1" heading="Код">
-                                            <div class="block block--sm block--gray">
-                                                <div hljs hljs-language="html" hljs-include="'view/modal/event-edit/_code.html'" id="modal-event-edit"></div>
-                                            </div>
-                                        </uib-tab>
-                                    </uib-tabset>
 
-                                    <a href="" class="switcher__copy" ngclipboard data-clipboard-target="#modal-event-edit" ngclipboard-success="onSuccess(e);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="icon" ratio="1">
-                                            <line fill="none" stroke="#999" x1="5.5" y1="9.5" x2="15" y2="9.5"></line>
-                                            <line fill="none" stroke="#999" x1="5" y1="1.5" x2="9" y2="1.5"></line>
-                                            <polyline fill="none" stroke="#999" stroke-width="1.03" points="8.5,6.5 5.5,9.5 8.5,12.5"></polyline>
-                                            <polyline fill="none" stroke="#999" points="12.5,7 12.5,2.5 9.5,2.5 9.5,3.5 4.5,3.5 4.5,2.5 1.5,2.5 1.5,15.5 12.5,15.5 12.5,12"></polyline>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <div class="grid">
+                    <!--<div class="grid">
                         <div class="col--1-1">
                             <div style="height: 400px; background: #ddd;" id="step2">
                                 <h1>Step 2</h1>
@@ -60,10 +76,10 @@
                                 <h1>Step 4</h1>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
 
-                <div class="col--1-5">
+                <!--<div class="col--1-5">
                     <div class="scrollspy scrollspy--fixed" hl-sticky="" offset-top="30">
                         <ul class="scrollspy__list">
                             <li class="scrollspy__item">
@@ -86,7 +102,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
             </div>
 
         </div>
