@@ -5,7 +5,8 @@ var app = angular.module('site', [
     'ui.bootstrap', 
     'hljs', 
     'ngclipboard',
-    'duScroll'
+    'duScroll',
+    'hl.sticky'
 ]);
 
 app.config(['$locationProvider', '$routeProvider', function($locationProvider, routeProvider) {

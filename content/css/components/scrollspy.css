@@ -1,0 +1,26 @@
+.scrollspy .scrollspy__divider {
+  border-bottom: 1px solid #eee;
+  padding-top: 4px;
+  margin-bottom: 4px;
+}
+.scrollspy .scrollspy__link {
+  position: relative;
+  display: block;
+  color: #999;
+  padding: 5px 0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 250ms;
+}
+.scrollspy .scrollspy__link:hover {
+  color: #171717;
+}
+.scrollspy .scrollspy__link.active:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -18px;
+  width: 10px;
+  margin-top: -1px;
+  border-top: 1px solid #1e87f0;
+}
