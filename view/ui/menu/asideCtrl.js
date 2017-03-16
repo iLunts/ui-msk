@@ -1,13 +1,11 @@
 app.config(["$routeProvider", function ($routeProvider) {
         $routeProvider.when("/", {
-            templateUrl: "view/home/index.html",
-            controller: "homeCtrl"
+            templateUrl: "view/typeface/index.html",
+            controller: "typefaceCtrl"
         });
 
         $routeProvider.otherwise({ redirectTo: "/" });
     }
 ]);
 
-app.controller('homeCtrl', function($scope){
-
-});
+app.controller('typefaceCtrl', function($scope){});

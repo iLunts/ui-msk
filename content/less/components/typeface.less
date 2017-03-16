@@ -1,0 +1,61 @@
+// out: ../../css/components/typeface.css, compress: true
+@import 'variables.less';
+// Name:            typeface
+// Description:     Defines styles to create layouts with typeface
+//
+//
+// Component:       `.typeface__*`
+// ----------------------------------------------------
+// Block '.typeface'
+// ----------------------------------------------------
+.typeface {
+    
+    // -----------------------------------------
+    // All modificators
+    // -----------------------------------------
+
+
+    // -----------------------------------------
+    // All elements
+    // -----------------------------------------
+
+    // Element '.typeface .typeface__block'
+    & &__block{
+        display: inline-block;
+        background-color: #f5f5f5;
+        padding: 30px;
+        border-radius: 6px;
+        text-align: center;
+        margin: 0 20px 0 0;
+        vertical-align: top;
+        color: #323846;
+
+        // Element '.typeface .typeface__block-title'
+        &-title{
+            font-weight: 500;
+            font-size: 6rem;
+            line-height: 1;
+            margin: 0;
+        }
+
+        // Element '.typeface .typeface__block-subtitle'
+        &-subtitle{
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1;
+            margin: 0;
+        }
+    }
+
+    // Element '.typeface .typeface__var'
+    & &__var{
+        display: inline-block;
+        vertical-align: top;
+
+        // Element '.typeface .typeface__var-text'
+        &-text{
+            line-height: 1.2;
+        }    
+    }    
+
+}
