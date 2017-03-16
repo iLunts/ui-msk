@@ -13,31 +13,35 @@
 // -----------------------------------------------------------------
 .input {
     position: relative;
-    padding: @input-padding 0;
+    width: 100%;
+    padding: @input-padding;
     color: @input-text-color;
     background: @input-background;
     border: none;
-    border-bottom: 1px solid @input-border-color;
+    border: 1px solid @input-border-color;
     margin-bottom: @input-margin;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     transition: all 200ms;
 
-    &:focus{
-        // border-bottom-color: @input-border-color-focus;
-    }
-
     // -----------------------------------------------------------
     // All modificators
     // -----------------------------------------------------------
 
-    // Modificator 'search'
-    &--search {
-        position: relative;
-        padding: @input-padding-search 0;
-        border-bottom: 1px solid @input-border-color-search;
-        color: #1d1d1d;
+    // Modificator '.input.input--sm'
+    &&--sm{
+        padding: (@input-padding / 2);
+    }
+
+    // Modificator '.input.input--md'
+    &&--md{
+        padding: (@input-padding * 1.5);
+    }
+
+    // Modificator '.input.input--lg'
+    &&--lg{
+        padding: (@input-padding * 2);
     }
 
     // -----------------------------------------------------------
@@ -83,8 +87,8 @@
     // All elements
     // -----------------------------------------------------------
 
-    // Element '.input-group .input'
-    & .input{
+    // Element '.input-group .input-group__field'
+    & &__field{
         margin: 0;
     }
 
