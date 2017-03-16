@@ -20,7 +20,6 @@ app.controller('modalCtrl', function ($scope, $uibModal, $log) {
 
     var modalInstance = $uibModal.open({
       templateUrl: 'modalEventEdit.html',
-      // controller: 'modalCtrl',
       size: size,
       backdrop: true,
       backdropClass: 'modal__overlay'

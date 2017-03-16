@@ -1,10 +1,1 @@
-html {
-  font-family: 'Open Sans', sans-serif;
-  color: #323846;
-}
-p {
-  line-height: 1.4;
-}
-.main {
-  margin-left: 200px;
-}
+html{font-family:'Open Sans',sans-serif;color:#323846}p{line-height:1.4}.main{margin-left:200px;height:100%;min-height:100vh}

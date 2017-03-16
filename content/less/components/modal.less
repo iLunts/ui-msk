@@ -137,8 +137,10 @@
         overflow: hidden;
         transition: all 250ms;
         
-
-        & > *:not(.modal){
+        // Element '.modal-open .main'
+        // Element '.modal-open .aside'
+        & .main,
+        & .aside{
             filter: blur(3px);
         }
     }
@@ -171,16 +173,22 @@
         z-index: 10;
         overflow: hidden;
 
-        // Modificator '.modal-dialog.modal-sm'
-        &.modal-sm{
-            left: (100% - @modal-width-sm) / 2;
-            width: @modal-width-sm;
-        }
-
         // Modificator '.modal-dialog.modal-lg'
         &.modal-lg{
             left: (100% - @modal-width-lg) / 2;
             width: @modal-width-lg;
+        }
+
+        // Modificator '.modal-dialog.modal-md'
+        &.modal-md{
+            left: (100% - @modal-width-md) / 2;
+            width: @modal-width-md;
+        }
+
+        // Modificator '.modal-dialog.modal-sm'
+        &.modal-sm{
+            left: (100% - @modal-width-sm) / 2;
+            width: @modal-width-sm;
         }
     }
 }
