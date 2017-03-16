@@ -1,5 +1,6 @@
 .switcher {
   position: relative;
+  margin: 10px 0;
 }
 .switcher .switcher__copy {
   position: absolute;

@@ -1,5 +1,59 @@
-<!--Font family-->
-<div data-ng-include="'view/font/font-family.html'"></div>
+<div class="block">
+    <h1 class="block__prefix">Typeface</h1>
 
-<!--Hierarchy font-->
-<div data-ng-include="'view/font/hierarchy.html'"></div>
+    <div class="block__content">
+
+        <div class="container typeface">
+            <div class="grid">
+                <div class="col--4-5">
+                    <!--Font family-->
+                    <div data-ng-include="'view/font/font-family.html'"></div>
+
+                    <!--Hierarchy font-->
+                    <div data-ng-include="'view/font/hierarchy.html'"></div>
+                </div>
+
+                <div class="col--1-5">
+                    <div class="scrollspy scrollspy--fixed" hl-sticky="" offset-top="130">
+                        <ul class="scrollspy__list">
+                            <li class="scrollspy__item">
+                                <a href="#font-family" du-smooth-scroll du-scrollspy class="scrollspy__link">Font family</a>
+                            </li>
+                            <li class="scrollspy__item">
+                                <a href="#hierarchy" du-smooth-scroll du-scrollspy class="scrollspy__link">Hierarchy</a>
+                            </li>
+                            <li class="scrollspy__item">
+                                <a href="#text-h1" du-smooth-scroll du-scrollspy class="scrollspy__link">H1</a>
+                            </li>
+                            <li class="scrollspy__item">
+                                <a href="#text-h2" du-smooth-scroll du-scrollspy class="scrollspy__link">H2</a>
+                            </li>
+                            <li class="scrollspy__item">
+                                <a href="#text-h3" du-smooth-scroll du-scrollspy class="scrollspy__link">H3</a>
+                            </li>
+                            <li class="scrollspy__item">
+                                <a href="#text-h4" du-smooth-scroll du-scrollspy class="scrollspy__link">H4</a>
+                            </li>
+                            <li class="scrollspy__item">
+                                <a href="#text-h5" du-smooth-scroll du-scrollspy class="scrollspy__link">H5</a>
+                            </li>
+                            <li class="scrollspy__item">
+                                <a href="#text-h6" du-smooth-scroll du-scrollspy class="scrollspy__link">H6</a>
+                            </li>
+                            <li class="scrollspy__item">
+                                <a href="#text-p" du-smooth-scroll du-scrollspy class="scrollspy__link">p</a>
+                            </li>
+                            <li class="scrollspy__divider"></li>
+                            <li class="scrollspy__item">
+                                <a href="#stepEdit" du-smooth-scroll du-scrollspy class="scrollspy__link">
+                                    Редактировать
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
