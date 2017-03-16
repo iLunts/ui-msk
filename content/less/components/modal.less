@@ -210,20 +210,20 @@
     // ------------------------------------------------
     .modal{
 
-        // Element '.modal .modal__dialog'
-        & &__dialog{
+        // Element '.modal-dialog'
+        &-dialog{
             width: @modal-width;
 
-            // Modificator '.modal .modal__dialog.modal__dialog--lg'
-            &.modal__dialog--lg{
+            // Modificator '.modal-dialog.modal-lg'
+            &.modal-lg{
                 left: (100% - (@modal-width-lg / 1.5)) / 2;
                 width: (@modal-width-lg / 1.5);
             }
 
-            // Modificator '.modal .modal__dialog.modal__dialog--md'
-            &.modal__dialog--md{
-                left: (100% - @modal-width-md) / 2;
-                width: (@modal-width-md / 1.5);
+            // Modificator '.modal-dialog.modal-sm'
+            &.modal-sm{
+                left: (100% - @modal-width-sm) / 2;
+                width: (@modal-width-sm / 1.5);
             }
         }
     }
@@ -239,20 +239,20 @@
     // ------------------------------------------------
     .modal{
 
-        // Element '.modal .modal__dialog'
-        & &__dialog{
+        // Element '.modal-dialog'
+        &-dialog{
             width: @modal-width;
 
-            // Modificator '.modal .modal__dialog.modal__dialog--lg'
-            &.modal__dialog--lg{
+            // Modificator '.modal-dialog.modal-lg'
+            &.modal-lg{
                 left: (100% - (@modal-width-lg / 1.2)) / 2;
                 width: (@modal-width-lg / 1.2);
             }
 
-            // Modificator '.modal .modal__dialog.modal__dialog--md'
-            &.modal__dialog--md{
-                left: (100% - (@modal-width-md / 1.2)) / 2;
-                width: (@modal-width-md / 1.2);
+            // Modificator '.modal-dialog.modal-sm'
+            &.modal-sm{
+                left: (100% - (@modal-width-sm / 1.2)) / 2;
+                width: (@modal-width-sm / 1.2);
             }
         }
     }
