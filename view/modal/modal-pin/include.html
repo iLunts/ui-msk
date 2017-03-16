@@ -11,19 +11,19 @@
     <div class="grid">
         <div class="col--1-1">
             <div class="switcher">
-                <uib-tabset active="modalBlankActive" type="tabs" vertical="false">
+                <uib-tabset active="modalPinActive" type="tabs" vertical="false">
                     <uib-tab index="0" heading="Пример">
-                        <div data-ng-include="'view/modal/modal-blank/_preview.html'"></div>
-                        <div data-ng-include="'view/modal/modal-blank/index.html'"></div>
+                        <div data-ng-include="'view/modal/modal-pin/_preview.html'"></div>
+                        <div data-ng-include="'view/modal/modal-pin/modal.html'"></div>
                     </uib-tab>
                     <uib-tab index="1" heading="Код">
                         <div class="block block--sm block--gray">
-                            <div hljs hljs-language="html" hljs-include="'view/modal/modal-blank/_code.html'" id="modal-blank"></div>
+                            <div hljs hljs-language="html" hljs-include="'view/modal/modal-pin/_code.html'" id="modal-blank"></div>
                         </div>
                     </uib-tab>
                 </uib-tabset>
 
-                <a href="" class="switcher__copy" ngclipboard data-clipboard-target="#modal-blank" ngclipboard-success="onSuccess(e);" uib-tooltip="Копировать">
+                <a href="" class="switcher__copy" ngclipboard data-clipboard-target="#modal-pin" ngclipboard-success="onSuccess(e);" uib-tooltip="Копировать">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="icon" ratio="1">
                         <line fill="none" stroke="#999" x1="5.5" y1="9.5" x2="15" y2="9.5"></line>
                         <line fill="none" stroke="#999" x1="5" y1="1.5" x2="9" y2="1.5"></line>
