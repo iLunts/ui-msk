@@ -9,15 +9,12 @@
 // Block '.modal'
 // ----------------------------------------------------
 .modal {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 250ms;
 
     // State '.modal.open'
-    &.open{
-        opacity: 1;
-        visibility: visible;
-    }
+    // &.open{
+    //     opacity: 1;
+    //     visibility: visible;
+    // }
 
     // -----------------------------------------
     // All modificators
@@ -28,43 +25,43 @@
     // -----------------------------------------
 
     // Element '.modal .modal__overlay'
-    & &__overlay{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
+    // & &__overlay{
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     background-color: rgba(0, 0, 0, 0.5);
+    // }
 
     // Element '.modal .modal__dialog'
-    & &__dialog{
-        position: absolute;
-        left: 25%;
-        top: 10%;
-        background: @modal-background;
-        width: @modal-width;
-        margin-right: -(@modal-width / 2);
-        box-shadow: 0 0 60px 0 rgba(0,0,0,.3);
-        z-index: 10;
+    // & &__dialog{
+    //     position: absolute;
+    //     left: 25%;
+    //     top: 10%;
+    //     background: @modal-background;
+    //     width: @modal-width;
+    //     margin-right: -(@modal-width / 2);
+    //     box-shadow: 0 0 60px 0 rgba(0,0,0,.3);
+    //     z-index: 10;
 
         // Modificator '.modal .modal__dialog.modal__dialog--gray'
-        &.modal__dialog--gray{
-            background: @modal-background-gray;
-        }
+        // &.modal__dialog--gray{
+        //     background: @modal-background-gray;
+        // }
 
         // Modificator '.modal .modal__dialog.modal__dialog--lg'
-        &.modal__dialog--lg{
-            left: (100% - @modal-width-lg) / 2;
-            width: @modal-width-lg;
-        }
+        // &.modal__dialog--lg{
+        //     left: (100% - @modal-width-lg) / 2;
+        //     width: @modal-width-lg;
+        // }
 
         // Modificator '.modal .modal__dialog.modal__dialog--md'
-        &.modal__dialog--md{
-            left: (100% - @modal-width-md) / 2;
-            width: @modal-width-md;
-        }
-    }  
+        // &.modal__dialog--md{
+        //     left: (100% - @modal-width-md) / 2;
+        //     width: @modal-width-md;
+        // }
+    // }  
 
     // Element '.modal .modal__content'
     // & &__content{
@@ -112,11 +109,93 @@
                 width: ~'calc(100% - @{modal-tab-width})';
                 padding: @modal-padding;
                 vertical-align: top;
-                background-color: #fff;
+                // background-color: #fff;
                 z-index: 1;
             }            
         }
     }    
+}
+
+// -------------------------------------------
+// Block '.modal' ~ for Bootsrtap
+// -------------------------------------------
+.modal{
+    display: none;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    transition: all 250ms;
+
+    // Element '.modal-open'
+    &-open{
+        overflow: hidden;
+        transition: all 250ms;
+        
+
+        & > *:not(.modal){
+            filter: blur(3px);
+        }
+    }
+
+    // Element '.modal-backgrop'
+    &-backdrop{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1040;
+        background-color: #000;
+        opacity: 0;
+
+        &.fade.in{
+            opacity: .5;
+        }
+    }
+
+    // Element '.modal-dialog'
+    &-dialog{
+        position: absolute;
+        left: 25%;
+        top: 10%;
+        background: @modal-background;
+        width: @modal-width;
+        margin-right: -(@modal-width / 2);
+        box-shadow: 0 0 60px 0 rgba(0,0,0,.3);
+        z-index: 10;
+        overflow: hidden;
+
+        // Modificator '.modal-dialog.modal-sm'
+        &.modal-sm{
+            left: (100% - @modal-width-sm) / 2;
+            width: @modal-width-sm;
+        }
+
+        // Modificator '.modal-dialog.modal-lg'
+        &.modal-lg{
+            left: (100% - @modal-width-lg) / 2;
+            width: @modal-width-lg;
+        }
+    }
+}
+
+// -------------------------------------------
+// Block '.fade'
+// -------------------------------------------
+.fade{
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+
+    &.in{
+        opacity: 1;
+    }
 }
 
 
