@@ -7,11 +7,20 @@
                 <div class="block__content">
                     <div class="container">
                         <div class="grid">
-                            <div class="col--1-1">
+
+                            <!--Modal blank-->
+                            <div class="col--1-1" id="modal-blank-main">
                                 <div data-ng-include="'view/modal/modal-blank/include.html'"></div>
                             </div>
-                            <div class="col--1-1">
-                                <div class="m--t-xlg" data-ng-include="'view/modal/event-edit/include.html'"></div>
+
+                            <!--Modal event edit-->
+                            <div class="col--1-1" id="modal-event-edit-main">
+                                <div class="m--t-xlg" data-ng-include="'view/modal/modal-event-edit/include.html'"></div>
+                            </div>
+                            
+                            <!--Modal enter PIN-->
+                            <div class="col--1-1" id="modal-enter-pin-main">
+                                <div class="m--t-xlg" data-ng-include="'view/modal/modal-pin/include.html'"></div>
                             </div>
                         </div>
                     </div>
@@ -19,23 +28,20 @@
             </div>
         </div>
         <div class="col--1-5">
-            <div class="scrollspy scrollspy--fixed" hl-sticky="" offset-top="30">
+            <div class="scrollspy scrollspy--fixed" hl-sticky="" offset-top="130">
                 <ul class="scrollspy__list">
                     <li class="scrollspy__item">
-                        <a href="#modal-event-edit-main" du-smooth-scroll du-scrollspy class="scrollspy__link">Blank</a>
+                        <a href="#modal-blank-main" du-smooth-scroll du-scrollspy class="scrollspy__link">Blank</a>
                     </li>
                     <li class="scrollspy__item">
-                        <a href="#modal-blank-main" du-smooth-scroll du-scrollspy class="scrollspy__link">Event edit</a>
+                        <a href="#modal-event-edit-main" du-smooth-scroll du-scrollspy class="scrollspy__link">Event edit</a>
                     </li>
                     <li class="scrollspy__item">
-                        <a href="#step3" du-smooth-scroll du-scrollspy class="scrollspy__link">Enter PIN</a>
-                    </li>
-                    <li class="scrollspy__item">
-                        <a href="#step4" du-smooth-scroll du-scrollspy class="scrollspy__link">Step 4</a>
+                        <a href="#modal-enter-pin-main" du-smooth-scroll du-scrollspy class="scrollspy__link">Enter PIN</a>
                     </li>
                     <li class="scrollspy__divider"></li>
                     <li class="scrollspy__item">
-                        <a href="#step5" du-smooth-scroll du-scrollspy class="scrollspy__link">
+                        <a href="#stepEdit" du-smooth-scroll du-scrollspy class="scrollspy__link">
                             Редактировать
                         </a>
                     </li>
@@ -45,66 +51,3 @@
     </div>
 </div>
 
-
-
-
-
-
-<div class="block">
-    <!--<h1 class="block__prefix">Modal</h1>-->
-    <div class="block__content">
-        <div class="container">
-            <div class="grid">
-                <div class="col--4-5">
-
-
-                    <!--<div class="grid">
-                        <div class="col--1-1">
-                            <div style="height: 400px; background: #ddd;" id="step2">
-                                <h1>Step 2</h1>
-                            </div>
-                        </div>
-
-                        <div class="col--1-1">
-                            <div style="height: 400px; background: #ddd;" id="step3">
-                                <h1>Step 3</h1>
-                            </div>
-                        </div>
-
-                        <div class="col--1-1">
-                            <div style="height: 400px; background: #ddd;" id="step4">
-                                <h1>Step 4</h1>
-                            </div>
-                        </div>
-                    </div>-->
-                </div>
-
-                <!--<div class="col--1-5">
-                    <div class="scrollspy scrollspy--fixed" hl-sticky="" offset-top="30">
-                        <ul class="scrollspy__list">
-                            <li class="scrollspy__item">
-                                <a href="#modal-event-edit-text" du-smooth-scroll du-scrollspy class="scrollspy__link active">Step 1</a>
-                            </li>
-                            <li class="scrollspy__item">
-                                <a href="#step2" du-smooth-scroll du-scrollspy class="scrollspy__link">Step 2</a>
-                            </li>
-                            <li class="scrollspy__item">
-                                <a href="#step3" du-smooth-scroll du-scrollspy class="scrollspy__link">Step 3</a>
-                            </li>
-                            <li class="scrollspy__item">
-                                <a href="#step4" du-smooth-scroll du-scrollspy class="scrollspy__link">Step 4</a>
-                            </li>
-                            <li class="scrollspy__divider"></li>
-                            <li class="scrollspy__item">
-                                <a href="#step5" du-smooth-scroll du-scrollspy class="scrollspy__link">
-                                    Редактировать
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>-->
-            </div>
-
-        </div>
-    </div>
-</div>

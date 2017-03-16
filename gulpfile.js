@@ -41,7 +41,8 @@ gulp.task('watch', function() {
 gulp.task('server', ['default'], function() {
 
     browserSync.init({
-        server: "./"
+        server: "./",
+        notify: false
     });
 
     gulp.watch(['content/less/**/*.less', 'view/**/*.*', 'scripts/**/*.*'], ['default']).on('change', browserSync.reload);
