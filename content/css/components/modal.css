@@ -83,6 +83,48 @@
   left: 37.5%;
   width: 25%;
 }
+.modal-dialog.modal-pin {
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+}
+.modal-pin {
+  padding: 30px 40px 20px 40px;
+}
+.modal-pin .modal-pin__indicator {
+  padding: 20px 0 20px 0;
+  text-align: center;
+  border-bottom: 1px dotted #eee;
+  margin-bottom: 20px;
+}
+.modal-pin .modal-pin__indicator-item {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 100%;
+  background: #ddd;
+  vertical-align: top;
+}
+.modal-pin .modal-pin__number-item {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 56px;
+  border: 2px solid #ddd;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #a7a7a7;
+  margin-bottom: 16px;
+}
+.modal-pin .modal-pin__number-item:nth-child(2),
+.modal-pin .modal-pin__number-item:nth-child(5),
+.modal-pin .modal-pin__number-item:nth-child(8),
+.modal-pin .modal-pin__number-item:nth-child(11) {
+  margin: 0 16px;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity .15s linear;
