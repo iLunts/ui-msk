@@ -1,6 +1,4 @@
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
-#bower_components
-#node_modules
-#scripts/app.min.js
+
