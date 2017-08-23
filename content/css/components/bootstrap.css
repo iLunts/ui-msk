@@ -62,7 +62,7 @@ kbd kbd {
 pre {
   display: block;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   font-size: 90%;
   color: #373a3c;
 }
