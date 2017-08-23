@@ -1,9 +1,9 @@
 <section name="modal-blank-main">
     <div class="grid">
         <div class="col--1-1">
-            <h1>Modal PIN code</h1>
+            <h1>Avatar normal size</h1>
             <p class="t--muted">
-                Модальное окно, которое появляется в случае простоя рабочего места. Это в первую очередь необходимо для администраторов с целью подтверждения личности.
+                Автарка стандартного размера.
             </p>
         </div>
     </div>
@@ -11,19 +11,19 @@
     <div class="grid">
         <div class="col--1-1">
             <div class="switcher">
-                <uib-tabset active="modalPinActive" type="tabs" vertical="false">
+                <uib-tabset active="avatarActive" type="tabs" vertical="false">
                     <uib-tab index="0" heading="Пример">
-                        <div data-ng-include="'view/modal/modal-pin/_preview.html'"></div>
-                        <div data-ng-include="'view/modal/modal-pin/modal.html'"></div>
+                        <div data-ng-include="'view/avatar/normal/_preview.html'"></div>
+                        <div data-ng-include="'view/avatar/normal/index.html'"></div>
                     </uib-tab>
                     <uib-tab index="1" heading="Код">
                         <div class="block block--sm block--gray">
-                            <div hljs hljs-language="html" hljs-include="'view/modal/modal-pin/_code.html'" id="modal-blank"></div>
+                            <div hljs hljs-language="html" hljs-include="'view/avatar/normal/_code.html'" id="avatar"></div>
                         </div>
                     </uib-tab>
                 </uib-tabset>
 
-                <a href="" class="switcher__copy" ngclipboard data-clipboard-target="#modal-pin" ngclipboard-success="onSuccess(e);" uib-tooltip="Копировать">
+                <a href="" class="switcher__copy" ngclipboard data-clipboard-target="#avatar" ngclipboard-success="onSuccess(e);" uib-tooltip="Копировать">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="icon" ratio="1">
                         <line fill="none" stroke="#999" x1="5.5" y1="9.5" x2="15" y2="9.5"></line>
                         <line fill="none" stroke="#999" x1="5" y1="1.5" x2="9" y2="1.5"></line>

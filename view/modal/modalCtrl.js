@@ -1,22 +1,29 @@
 app.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider.when("/modal", {
-            templateUrl: "view/modal/index.html",
-            controller: "modalCtrl"
-        });
-    }
-]);
+  $routeProvider.when("/modal", {
+    templateUrl: "view/modal/index.html",
+    controller: "modalCtrl"
+  });
+}]);
 
-app.controller('modalCtrl', function($scope){
-  $scope.onSuccess = function(e) {
+// app.controller('modalCtrl', function($scope){
+//   $scope.onSuccess = function(e) {
+//     e.clearSelection();
+//   };
+// });
+
+app.controller('modalCtrl', function ($scope, $uibModal, $log) {
+  $scope.onSuccess = function (e) {
     e.clearSelection();
   };
 
-  $scope.isOpenModalBlank = false;
-  // $scope.isOpenEventEdit = false;
+  $scope.open = function (size, template) {
 
-  $scope.changeState = function(stateItem){
-    stateItem = !stateItem;
-    console.log(stateItem);
-    return stateItem;
-  }
+    var modalInstance = $uibModal.open({
+      templateUrl: template,
+      size: size,
+      backdrop: true,
+      backdropClass: 'modal__overlay'
+    });
+  };
+
 });
